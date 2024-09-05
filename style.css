@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    background-color: black;
+    font-family: monospace;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    
+
+ }
+
+ h1{
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+ }
+
+ .stopwatch{
+    
+   border: 10px solid transparent;
+   padding:20px;
+   display: inline-block;
+   border-image: linear-gradient(to right, red, purple) 1;
+
+  }
+
+ 
+ .stopwatch #clockWatch{
+    font-size: 80px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+       
+ }
+
+ 
+ .btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+ }
+
+ button{
+   
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+
+    
+ }
+
+ #startBtn, #resetBtn{
+    background-color: orangered;
+    color: #fff;
+ }
+
+ #stopBtn {
+    position: relative;
+    background-color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    overflow: hidden;
+    color: transparent; 
+  }
+  
+  #stopBtn::before {
+    content: "Stop";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, red, purple) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none; 
+  }
